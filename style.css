@@ -538,10 +538,11 @@ padding-bottom:7px;
 }
 /*   ラベル
 -------------------------------------------- */
+/*
 .list-label-widget-content ul li a {
 font-size: 13px;
 color:#666666;
-transition:0.4s;  /* 徐々に変化させる */
+transition:0.4s;  /* 徐々に変化させる /*
 padding: 6px 10px;
 border: 1px solid #e4e4e4;
 border-radius: 2px;
@@ -551,7 +552,7 @@ background-color:#ffffff
 color:#ffffff;
 background-color:#008ec2;
 text-decoration:none;
-}
+}*/
 .list-label-widget-content ul{
 list-style-type: none;
 padding:0;
