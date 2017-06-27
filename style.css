@@ -1,0 +1,782 @@
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:Vaster2
+Designer: Toumasu
+URL:www.vaster2.com
+----------------------------------------------- */
+<Group description="ページ全体の背景" selector="body">
+<Variable name="body.background.color" description="全体の背景" type="color" default="#ffffff"/>
+</Group>
+<Group description="ヘッダー" selector=".Header">
+<Variable name="header.background.color" description="ヘッダー背景" type="color" default="#ffffff"/>
+<Variable name="header.topborder.color" description="ヘッダー上線" type="color" default="#008ec2"/>
+<Variable name="header.title.color" description="ヘッダー文字" type="color" default="#000000"/>
+<Variable name="header.description.color" description="ヘッダー説明文" type="color" default="#000000"/>
+</Group>
+<Group description="ヘッダーナビ" selector=".PageList">
+<Variable name="headernavi.background.color" description="ヘッダーナビ背景" type="color" default="#4b99b5"/>
+<Variable name="headernavi.link.color" description="リンク背景" type="color" default="#4b99b5"/>
+<Variable name="headernavi.link.hover" description="リンク背景&#65288;カーソル&#65289;" type="color" default="#4b99b5"/>
+<Variable name="headernavi.font.color" description="リンク文字" type="color" default="#ffffff"/>
+<Variable name="headernavi.font.hover" description="リンク文字&#65288;カーソル&#65289;" type="color" default="#ffffff"/>
+</Group>
+<Group description="TOP&#12289;カテゴリーの記事一覧" selector=".article-list">
+<Variable name="articlelist.background.color" description="カーソル合わせた時の背景" type="color" default="#f9f9f9"/>
+<Variable name="articlelist.posttag.color" description="ラベル名の背景" type="color" default="#008ec2"/>
+<Variable name="articlelist.posttag.font" description="ラベル名の文字" type="color" default="#ffffff"/>
+</Group>
+<Group description="記事ページ" selector=".entry-content">
+<Variable name="kizi.background" description="記事部分の背景" type="color" default="#ffffff"/>
+<Variable name="entryh2.color" description="大見出し(h2)の文字色" type="color" default="#ffffff"/>
+<Variable name="entryh2.background" description="大見出し(h2)の背景色" type="color" default="#008ec2"/>
+<Variable name="entryh3.border" description="中見出し(h3)の左線" type="color" default="#008ec2"/>
+<Variable name="entryh3.color" description="中見出し(h3)の文字色" type="color" default="#008ec2"/>
+</Group>
+<Group description="関連記事" selector="#related-posts">
+<Variable name="related.color" description="文字の色(カーソル時)" type="color" default="#ffffff"/>
+<Variable name="related.background" description="背景の色(カーソル時)" type="color" default="#008ec2"/>
+</Group>
+<Group description="ページナビ" selector="#blog-pager">
+<Variable name="pager.color" description="文字の色" type="color" default="#666666"/>
+<Variable name="pager.background" description="背景の色" type="color" default="#ffffff"/>
+<Variable name="pager.border" description="周囲の線" type="color" default="#dedede"/>
+<Variable name="pager.color.hover" description="文字の色(カーソル時)" type="color" default="#ffffff"/>
+<Variable name="pager.background.hover" description="背景の色(カーソル時)" type="color" default="#008ec2"/>
+</Group>
+<Group description="サイドバーの見出し" selector=".sidebar h2, h3, h4 ">
+<Variable name="sidebarh2.color" description="文字の色" type="color" default="#000000"/>
+<Variable name="sidebarh2.border" description="左線の色" type="color" default="#008ec2"/>
+</Group>
+<Group description="ラベルのリンク" selector=".list-label-widget-content">
+<Variable name="label.color" description="文字の色" type="color" default="#666666"/>
+<Variable name="label.border" description="線の色" type="color" default="#e4e4e4"/>
+<Variable name="label.background" description="背景の色" type="color" default="#ffffff"/>
+<Variable name="label.color.hover" description="文字の色(カーソル時)" type="color" default="#ffffff"/>
+<Variable name="label.background.hover" description="背景の色(カーソル時)" type="color" default="#008ec2"/>
+</Group>
+<Group description="人気記事のリンク" selector=".popular-post">
+<Variable name="popular.color" description="記事タイトルの色" type="color" default="#666666"/>
+<Variable name="popular.color.hover" description="記事タイトルの色(カーソル時)" type="color" default="#008ec2"/>
+</Group>
+<Group description="メニューを開くボタン(スマホ時のみ)" selector=".popular-post">
+<Variable name="button.color" description="ボタンの文字色" type="color" default="#ffffff"/>
+<Variable name="button.background" description="ボタンの背景色" type="color" default="#008ec2"/>
+</Group>
+body{
+font-family:Helvetica,"游ゴシック","Yu Gothic",sans-serif;
+margin:0;
+font-size:16px;
+line-height:1.6em;
+}
+img, video, object {
+max-width: 100%;
+height: auto;
+border: none;
+vertical-align: bottom;
+display: block;
+}
+a{
+text-decoration:none;
+}
+.body-wrapper{
+background-color:#ffffff;  /*  全体の背景色  */
+overflow: hidden;
+}
+.section{
+margin:initial;
+}
+.widget{
+margin:initial;
+}
+/*  記事部分とサイドバー  */
+.content-wrapper{
+/*width: 1040px;*/  /*  記事部分&#12288;サイドバーの横幅  */
+display: grid;
+grid-template-columns: minmax(512px,690px) minmax(200px,330px);
+justify-content: center;
+margin-right: auto;
+margin-left: auto;
+padding-top:20px;
+}
+iframe{
+max-width:100%;
+}
+/*SNSボタンのカスタマイズ*/
+.sns{
+margin:10px auto;
+text-align:center;
+width:100%;
+}
+.sns ul {
+list-style:none !important;
+padding: initial !important;
+}
+.sns li {
+float:left;
+width:30%;
+height:54px;
+margin:20px 3px;
+list-style:none !important;
+}
+.sns li span,.sns .fa{
+font-size:30px !important;
+}
+.sns li a {
+font-size:18px;
+position:relative;
+display:block;
+padding:8px;
+transition:0.3s;
+font-weight: 700;
+border-radius:6px;
+text-align:center;
+text-decoration: none;
+}
+/* ツイッター */
+.twitter a {
+color:#00acee;
+background:#fff;
+border:2px solid #00acee
+}
+.twitter a:hover {
+background:#00acee;
+color:#fff;
+}
+/* Facebook */
+.facebook a {
+background:#fff;
+color:#3b5998;
+border:2px solid #3b5998;
+}
+.facebook a:hover {
+background:#3b5998;
+color:#fff;
+}
+/* グーグル */
+.google1 a {
+background:#fff;
+color:#db4a39;
+border:2px solid #db4a39;
+}
+.google1 a:hover {
+background:#db4a39;
+color:#fff;
+}
+/* はてぶ */
+.hatebu a {
+background:#fff;
+color:#5d8ac1;
+border:2px solid #5d8ac1;
+}
+.hatebu a:hover {
+background:#5d8ac1;
+color:#fff;
+}
+/* feedly  */
+.feedly a{
+background:#fff;
+color:#87c040;
+border:2px solid #87c040;
+}
+.feedly a:hover{
+background:#87c040;
+color:#fff;
+}
+/* Pocket */
+.pocket a {
+background:#fff;
+color:#f03e51;
+border:2px solid #f03e51;
+}
+.pocket a:hover {
+background:#f03e51;
+color:#fff;
+}
+.clearfix:after {
+content: "";
+display: block;
+clear: both;
+}
+.share-title{
+padding: .5em .75em;
+margin-bottom: 30px;
+background:#008ec2;
+color:#ffffff;
+}
+@media only screen and (max-width: 780px) {
+.sns li{
+width:47%;
+}
+}
+/*   リンク
+----------------------------------------------- */
+.post a{
+text-decoration:none;
+color:#3366cc;
+}
+.post a:hover {
+text-decoration:underline;
+color:#3366cc;
+}
+.post a:visited{
+color:#3366cc;
+}
+/*   引用
+--------------------------------------------- */
+blockquote {
+padding: 10px 30px;
+margin: 10px 0 20px 0;
+border: 1px solid #c8c8c8;
+overflow-wrap: break-word;
+}
+/*   記事のフォント
+----------------------------------------------- */
+.main-outer h1{
+font-size:28px;
+line-height:1.6em;
+margin-bottom:30px;
+}
+.entry-content h2{
+padding: .5em .75em;
+margin-bottom: 30px;
+background:#008ec2;
+color:#ffffff;
+}
+.entry-content h3{
+font-size:20px;
+padding:15px 0 15px 10px;
+border-left: 8px solid #008ec2;
+color:#008ec2;
+}
+.main-outer p{
+font-size:16px;
+line-height:1.6em;
+padding-bottom:24px;
+}
+/*   ヘッダー
+--------------------------------------- */
+.Header{
+width:100%;
+background-color: #ffffff;
+padding-bottom: 30px;
+border-top:3px solid #008ec2;
+}
+#header-inner{
+width:1040px;
+margin:0 auto;
+padding-top:20px;
+}
+.Header p{
+margin:0;
+}
+.PageList{
+width:100%;
+background-color:#4b99b5;
+}
+.grobal-navi{
+width:1040px;
+margin:0 auto;
+}
+/*   ブログタイトル
+---------------------------------------- */
+.header h1{
+margin-top:0;
+margin-bottom:0;
+}
+.header-title a{
+font-size:40px !important;
+font-weight:700;
+text-decoration:none;
+color:#000000;
+}
+.header-title a:hover{
+text-decoration:none;
+}
+.header-title a:visited{
+color:#000000;
+}
+/*   ブログ説明   */
+.header-description p{
+font-size:13px;
+margin-top:5px;
+color:#000000;
+}
+/*   ヘッダーナビゲーション
+------------------------------------------- */
+.header-nav{
+padding:0 !important;
+}
+.header-nav li{
+float:left;
+list-style:none;
+font-size:14px;
+padding:0;
+}
+.header-nav a{
+padding: 10px 20px;
+font-size: 14px;
+color:#ffffff;
+background:#4b99b5;
+text-decoration: none;
+display: block;
+transition:.3s;
+}
+.header-nav a:hover{
+background-color:#4b99b5;
+color:#ffffff;
+text-decoration:none;
+}
+div#Navbar1 {
+display: none;
+}
+/*   記事ページ
+-------------------------------------------- */
+.main-outer{
+float:left;
+/*width:710px;*/
+background:#ffffff;
+padding-left:20px;
+box-sizing:border-box;
+}
+.date-outer {
+border-right:1px solid #e4e4e4;
+padding-right:40px;
+}
+#main{
+margin:0;
+}
+.post-outer{
+width: 100%;
+}
+.post-outer img{
+max-width:100%;&#12288;&#12288;/* 記事内の画像をはみ出させない */
+height:auto;
+}
+/*  記事ページのリストタグのデザイン  */
+.post-outer ul {
+list-style-type: disc;
+padding:20px;
+margin-bottom: 30px !important;
+}
+.post-outer ol {
+list-style-type: decimal;
+padding:20px;
+margin-bottom: 30px !important;
+}
+/*&#12288;記事ページの公開日 カテゴリ名 */
+p.kousin{
+font-size: 14px;
+display: inline-block;
+color: #696969;
+padding-bottom:3px !important;
+}
+p.kousin a {
+color: #696969;
+}
+/*   トップページ&#12289;カテゴリ&#12289;アーカイブの記事一覧
+--------------------------------------------------------- */
+.article-list-link{
+text-decoration:none !important;
+}
+.article-list-link:hover{
+text-decoration:none !important;
+}
+.article-list{
+padding-bottom:30px;
+padding-top:10px;
+border-bottom:1px dashed #666;
+float:none;
+transition:0.3s;
+}
+/* .article-list:hoverを.post-outer:hoverに変更 */
+/*.post-outer:hover{
+background-color:#f9f9f9;
+}*/
+.article-list img{
+float:left;
+width:300px;
+height:185px;
+padding-right:20px;
+}
+/*  記事一覧のタイトル  */
+.article-list-title{
+overflow:hidden;
+}
+.article-list-title h2{
+color:#666;
+font-size:23px;
+}
+article-list-link{
+color:#000;
+}
+.article-list-link:hover{
+text-decoration:none;
+}
+/*   記事一覧の公開日&#12289;カテゴリ名  */
+.post-timestamp {
+font-size:14px !important;
+margin-left: initial;
+opacity:0.7;
+color:#888;
+padding-bottom:2px !important;
+margin-right: 15px !important;
+display:inline-block;
+margin-top:0;
+}
+.post-tag{
+font-size:14px !important;
+background:#008ec2;
+padding:1px 4px !important;
+color:#ffffff;
+margin-top:0;
+display:inline-block;
+}
+/*   記事一覧の要約   */
+.snippet{
+font-size:14px;
+padding:0 !important;
+color:#888;
+margin-top:15px !important;
+margin-bottom: 5px;
+line-height:1.4em !important;
+word-break:break-all;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;
+}
+/*   パンくずリスト
+--------------------------------------- */
+.breadcrumb-wrapper {
+margin: 30px 0 15px;
+}
+.breadcrumb {
+padding:0 !important;
+}
+.breadcrumb a {
+color: #666;
+font-size:13px;
+text-decoration:none;
+}
+.breadcrumb li {
+display: inline;
+list-style-type: none;
+}
+.breadcrumb  li:after {
+content: " > ";
+}
+/*   関連記事
+-------------------------------------- */
+#related-posts{
+width:auto;
+}
+#related-posts a{
+color:#666;
+transition:0.3s;
+}
+#related-posts a:hover{
+color:#ffffff;
+background:#008ec2;
+}
+#related-posts h2{
+padding: .5em .75em;
+margin-bottom: 30px;
+background:#008ec2;
+color:#ffffff;
+}
+#related-posts .related_img {
+margin:5px;
+width: 140px;
+height: 100px;
+transition:all 300ms ease-in-out;
+}
+#related-title {
+font-size:12px;
+width:140px;
+height: 70px;
+font-weight:700;
+margin-right: 5px;
+margin-left: 5px;
+box-sizing: border-box;
+}
+#related-posts .related_img:hover{
+filter:alpha(opacity=70);
+}
+p.st-post-footer-buttons {
+display: none;
+}
+/*    ページナビゲーション
+------------------------------------------------ */
+#blog-pager a{
+font-size: 14px;
+padding:16px 8px;
+width:130px;
+box-sizing:border-box;
+color:#666666;
+background-color:#ffffff;
+border:1px solid #dedede;
+margin:3px 6px;
+display: inline-block;
+transition:0.3s;
+}
+#blog-pager a:hover{
+text-decoration:none;
+color:#ffffff;
+background:#008ec2;
+}
+#blog-pager .pages{border:none;}
+/*   サイドバー
+-------------------------------------- */
+.sidebar {
+/*width:330px;*/
+max-width:100%;
+/*float:left;*/
+padding-left:40px;
+box-sizing:border-box;
+}
+/*   サイドバー見出し   */
+.sidebar h2,h3,h4{
+padding:5px 0 5px 10px;
+font-size:20px;
+font-weight:700;
+border-left: 2px solid #008ec2;
+color:#000000;
+margin-bottom: 20px;
+margin-top: 30px;
+}
+/*   人気記事
+--------------------------------------- */
+.popular-post ul li a {
+font-size: 15px;
+color:#666666;
+font-weight: 700;
+}
+.popular-post ul li a:hover{
+color:#008ec2;
+}
+.popular-post ul li{
+margin: 5px 0;
+list-style-type:none;
+}
+.popular-post ul{
+padding:0;
+}
+.item-thumbnail{
+float:left;
+margin: 0 10px 10px 0;
+}
+.item-thumbnail a:hover{
+opacity:0.7;
+}
+.item-snippet p {
+overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+font-size:13px;
+line-height:1.4em;
+margin: 0;
+}
+.item-content {
+margin: 5px;
+}
+/*   月別アーカイブ
+--------------------------------------- */
+.archive-list ul{
+padding:0 0 20px 10px;
+list-style-type:none;
+line-height:1.5em;
+}
+.archive-list ul a{
+color:#2098a8;
+}
+.archive-list ul li{
+padding-bottom:7px;
+}
+/*   ラベル
+-------------------------------------------- */
+.list-label-widget-content ul li a {
+font-size: 13px;
+color:#666666;
+transition:0.4s;  /* 徐々に変化させる */
+padding: 6px 10px;
+border: 1px solid #e4e4e4;
+border-radius: 2px;
+background-color:#ffffff
+}
+.list-label-widget-content ul li a:hover{
+color:#ffffff;
+background-color:#008ec2;
+text-decoration:none;
+}
+.list-label-widget-content ul{
+list-style-type: none;
+padding:0;
+line-height:initial;
+}
+.list-label-widget-content ul li{
+margin: 5px 2px;
+display:inline-block;
+}
+/*   フッター
+----------------------------------------------- */
+.footer-outer{
+color:#999;
+width:100%;
+clear:both;
+font-size:14px;
+padding-top:40px;
+padding-bottom:30px;
+}
+.footer-outer a{
+color:#999;
+}
+.footer-outer a:hover{
+text-decoration:none;
+}
+/*  メニューを開くボタン  */
+.button-toggle{
+display:none;
+}
+@media screen and (max-width: 768px){
+.button-toggle{
+display:block !important;
+width:90%;
+box-sizing:border-box;
+color:#ffffff;
+padding:8px 10px;
+margin:10px auto;
+background:#008ec2;
+;
+}
+}
+/*   レスポンシブデザイン
+--------------------------------------------------- */
+@media screen and (max-width: 768px){
+.content-wrapper{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
+width:auto;
+margin:0 auto;
+padding-top:5px;
+}
+.post-timestamp {
+margin:0 !important;
+font-size:12px !important;
+line-height: initial !important;
+opacity:1;
+}
+.post-tag{
+font-size:12px !important;
+padding:1px 4px !important;
+line-height: initial !important;
+}
+#header-inner{
+width:auto;
+margin:0 auto;
+padding-left:20px;
+padding-right:10px;
+}
+nav{
+max-width:auto !important;
+height:auto;
+margin:0 auto;
+display:block;
+}
+.header-nav{
+width:auto;
+height:auto;
+background:#000;
+margin:0 auto;
+background:#f9f9f9;
+}
+.header-nav li {
+float:none;
+}
+.PageList{
+background-color:transparent;
+}
+.header-nav a{
+padding:20px 20px;
+font-size:16px;
+}
+.main-outer{
+width:100%;
+padding:0 !important;
+float:none;
+margin-left:auto;
+margin-right:auto;
+}
+.post-outer{
+width: calc(100% - 15px);
+margin: auto;
+}
+.post-body{
+padding:0 15px;
+width:100%;
+box-sizing: border-box;
+}
+.date-outer {
+border-right:none !important;
+padding-right:0 !important;
+}
+.grobal-navi{
+width:auto;
+}
+.article-list {
+padding:15px 5px 10px 10px !important;
+}
+.article-thumbnail img{
+width:100px !important;
+height:70px !important;
+}
+.article-thumbnail{
+text-align:center;
+}
+.post-box{
+text-align:center;
+}
+.article-list{
+width:auto;
+float:none;
+}
+.article-list-title h2{
+font-size:16px;
+line-height:1.4em;
+}
+.snippet{
+display:none;
+}
+#related-posts{
+width:98%;
+margin-left:auto;
+margin-right:auto;
+}
+#related-posts .related_img{
+width:140px;
+box-sizing:border-box;
+height:100px;
+}
+img{
+max-width:95%;
+height:auto;
+}
+.sidebar{
+width:90%;
+float:none;
+padding-left:initial;
+margin-left:auto;
+margin-right:auto;
+}
+.item-snippet{
+display:none;
+}
+.archive-list ul li{
+padding-bottom:10px;
+}
+.footer-outer{
+width:auto;
+margin:0;
+bottom:0;
+}
+}
