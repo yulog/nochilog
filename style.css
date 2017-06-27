@@ -5,64 +5,7 @@ Name:Vaster2
 Designer: Toumasu
 URL:www.vaster2.com
 ----------------------------------------------- */
-<Group description="ページ全体の背景" selector="body">
-<Variable name="body.background.color" description="全体の背景" type="color" default="#ffffff"/>
-</Group>
-<Group description="ヘッダー" selector=".Header">
-<Variable name="header.background.color" description="ヘッダー背景" type="color" default="#ffffff"/>
-<Variable name="header.topborder.color" description="ヘッダー上線" type="color" default="#008ec2"/>
-<Variable name="header.title.color" description="ヘッダー文字" type="color" default="#000000"/>
-<Variable name="header.description.color" description="ヘッダー説明文" type="color" default="#000000"/>
-</Group>
-<Group description="ヘッダーナビ" selector=".PageList">
-<Variable name="headernavi.background.color" description="ヘッダーナビ背景" type="color" default="#4b99b5"/>
-<Variable name="headernavi.link.color" description="リンク背景" type="color" default="#4b99b5"/>
-<Variable name="headernavi.link.hover" description="リンク背景&#65288;カーソル&#65289;" type="color" default="#4b99b5"/>
-<Variable name="headernavi.font.color" description="リンク文字" type="color" default="#ffffff"/>
-<Variable name="headernavi.font.hover" description="リンク文字&#65288;カーソル&#65289;" type="color" default="#ffffff"/>
-</Group>
-<Group description="TOP&#12289;カテゴリーの記事一覧" selector=".article-list">
-<Variable name="articlelist.background.color" description="カーソル合わせた時の背景" type="color" default="#f9f9f9"/>
-<Variable name="articlelist.posttag.color" description="ラベル名の背景" type="color" default="#008ec2"/>
-<Variable name="articlelist.posttag.font" description="ラベル名の文字" type="color" default="#ffffff"/>
-</Group>
-<Group description="記事ページ" selector=".entry-content">
-<Variable name="kizi.background" description="記事部分の背景" type="color" default="#ffffff"/>
-<Variable name="entryh2.color" description="大見出し(h2)の文字色" type="color" default="#ffffff"/>
-<Variable name="entryh2.background" description="大見出し(h2)の背景色" type="color" default="#008ec2"/>
-<Variable name="entryh3.border" description="中見出し(h3)の左線" type="color" default="#008ec2"/>
-<Variable name="entryh3.color" description="中見出し(h3)の文字色" type="color" default="#008ec2"/>
-</Group>
-<Group description="関連記事" selector="#related-posts">
-<Variable name="related.color" description="文字の色(カーソル時)" type="color" default="#ffffff"/>
-<Variable name="related.background" description="背景の色(カーソル時)" type="color" default="#008ec2"/>
-</Group>
-<Group description="ページナビ" selector="#blog-pager">
-<Variable name="pager.color" description="文字の色" type="color" default="#666666"/>
-<Variable name="pager.background" description="背景の色" type="color" default="#ffffff"/>
-<Variable name="pager.border" description="周囲の線" type="color" default="#dedede"/>
-<Variable name="pager.color.hover" description="文字の色(カーソル時)" type="color" default="#ffffff"/>
-<Variable name="pager.background.hover" description="背景の色(カーソル時)" type="color" default="#008ec2"/>
-</Group>
-<Group description="サイドバーの見出し" selector=".sidebar h2, h3, h4 ">
-<Variable name="sidebarh2.color" description="文字の色" type="color" default="#000000"/>
-<Variable name="sidebarh2.border" description="左線の色" type="color" default="#008ec2"/>
-</Group>
-<Group description="ラベルのリンク" selector=".list-label-widget-content">
-<Variable name="label.color" description="文字の色" type="color" default="#666666"/>
-<Variable name="label.border" description="線の色" type="color" default="#e4e4e4"/>
-<Variable name="label.background" description="背景の色" type="color" default="#ffffff"/>
-<Variable name="label.color.hover" description="文字の色(カーソル時)" type="color" default="#ffffff"/>
-<Variable name="label.background.hover" description="背景の色(カーソル時)" type="color" default="#008ec2"/>
-</Group>
-<Group description="人気記事のリンク" selector=".popular-post">
-<Variable name="popular.color" description="記事タイトルの色" type="color" default="#666666"/>
-<Variable name="popular.color.hover" description="記事タイトルの色(カーソル時)" type="color" default="#008ec2"/>
-</Group>
-<Group description="メニューを開くボタン(スマホ時のみ)" selector=".popular-post">
-<Variable name="button.color" description="ボタンの文字色" type="color" default="#ffffff"/>
-<Variable name="button.background" description="ボタンの背景色" type="color" default="#008ec2"/>
-</Group>
+
 body{
 font-family:Helvetica,"游ゴシック","Yu Gothic",sans-serif;
 margin:0;
