@@ -218,8 +218,36 @@ width:100%;
 background-color:#4b99b5;
 }
 .grobal-navi{
-width:1040px;
-margin:0 auto;
+  width:1040px;
+  margin:0 auto;
+}
+div#searchbox {
+  display: grid;
+  grid-template-columns: 200px;
+  justify-content: center;
+  height: 33px;
+}
+form {
+  display: grid;
+  grid-template-columns: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+form:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+input#q {
+  height: 100%;
+  padding-right: 37px;
+  outline: transparent none 0;
+  border: 0 none transparent;
+}
+button.icon-search {
+  position: absolute;
+  height: 100%;
+  margin-left: 164px;
+  outline: transparent none 0;
+  border: 0 none transparent;
 }
 /*   ブログタイトル
 ---------------------------------------- */
