@@ -258,6 +258,7 @@ button.icon-search {
   outline: transparent none 0;
   border: 0 none transparent;
   background-color: transparent;
+  display: grid;
 }
 /*   ブログタイトル
 ---------------------------------------- */
