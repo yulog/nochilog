@@ -51,7 +51,7 @@ iframe{
 max-width:100%;
 }
 /*SNSボタンのカスタマイズ*/
-.sns ul {
+div.sns ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%,1fr));
     grid-auto-rows: 71.5px;
@@ -69,13 +69,13 @@ width:100%;
 list-style:none !important;
 /*padding: initial !important;*/
 }
-.sns li {
+/*.sns li {
 float:left;
 width:30%;
 height:54px;
 margin:20px 3px;
 list-style:none !important;
-}
+}*/
 .sns li span,.sns .fa{
 font-size:30px !important;
 }
@@ -165,14 +165,14 @@ color:#ffffff;
 /*.sns li{
 width:47%;
 }*/
-.sns ul {
+div.sns ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, 47%);
     grid-auto-rows: 71.5px;
     grid-column-gap: 6px;
     grid-row-gap: 20px;
     justify-content: center;
-    padding: 0 1.25em;
+    padding: 0px .25em;
 }
 }
 /*   リンク
