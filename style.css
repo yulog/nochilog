@@ -67,7 +67,7 @@ width:100%;
 }
 .sns ul {
 list-style:none !important;
-padding: initial !important;
+/*padding: initial !important;*/
 }
 .sns li {
 float:left;
@@ -164,6 +164,15 @@ color:#ffffff;
 @media only screen and (max-width: 780px) {
 .sns li{
 width:47%;
+}
+ul.clearfix {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 47%);
+    grid-auto-rows: 71.5px;
+    grid-column-gap: 6px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    padding: 0 1.25em;
 }
 }
 /*   リンク
