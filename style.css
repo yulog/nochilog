@@ -11,6 +11,10 @@ URL:www.vaster2.com
     --primary-color: rgb(63,81,181);
 }
 
+.content-wrapper, div.sns ul, div#searchbox, form, button.icon-search, #blog-pager, #blog-pager a {
+  display: grid;
+}
+
 body{
 font-family:Helvetica,"游ゴシック","Yu Gothic",sans-serif;
 margin:0;
@@ -39,7 +43,7 @@ margin:initial;
 }
 /*  記事部分とサイドバー  */
 .content-wrapper{
-/*width: 1040px;*/  /*  記事部分&#12288;サイドバーの横幅  */
+/*width: 1040px;*/  /*  記事部分 サイドバーの横幅  */
 display: grid;
 grid-template-columns: minmax(512px,690px) minmax(200px,330px);
 justify-content: center;
@@ -356,7 +360,7 @@ margin:0;
 width: 100%;
 }
 .post-outer img{
-max-width:100%;&#12288;&#12288;/* 記事内の画像をはみ出させない */
+max-width:100%;  /* 記事内の画像をはみ出させない */
 height:auto;
 }
 /*  記事ページのリストタグのデザイン  */
@@ -370,7 +374,7 @@ list-style-type: decimal;
 padding:20px;
 margin-bottom: 30px !important;
 }
-/*&#12288;記事ページの公開日 カテゴリ名 */
+/* 記事ページの公開日 カテゴリ名 */
 p.kousin{
 font-size: 14px;
 display: inline-block;
@@ -380,7 +384,7 @@ padding-bottom:3px !important;
 p.kousin a {
 color: #696969;
 }
-/*   トップページ&#12289;カテゴリ&#12289;アーカイブの記事一覧
+/*   トップページ、カテゴリ、アーカイブの記事一覧
 --------------------------------------------------------- */
 .article-list-link{
 text-decoration:none !important;
@@ -419,7 +423,7 @@ color:#000;
 .article-list-link:hover{
 text-decoration:none;
 }
-/*   記事一覧の公開日&#12289;カテゴリ名  */
+/*   記事一覧の公開日、カテゴリ名  */
 .post-timestamp {
 font-size:14px !important;
 margin-left: initial;
@@ -533,10 +537,10 @@ transition:0.3s;*/
 #blog-pager a:hover{
 /*text-decoration:none;*/
 color:#ffffff;
-background:rgb(63,81,181);
+background:var(--primary-color);
 }
 #blog-pager .pages{border:none;}
-i.material-icons {
+.blog-pager i.material-icons {
   line-height: 36px;
 }
 #blog-pager-older-link {
