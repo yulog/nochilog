@@ -171,12 +171,12 @@ width:47%;
 }*/
 div.sns ul {
     /*display: grid;*/
-    grid-template-columns: repeat(auto-fit, 47%);
+    grid-template-columns: repeat(auto-fit, minmax(47%,1fr));
     grid-auto-rows: 71.5px;
     grid-column-gap: 6px;
     grid-row-gap: 20px;
     justify-content: center;
-    padding: 0px .25em;
+    padding: 0px 1em;
 }
 }
 /*   リンク
