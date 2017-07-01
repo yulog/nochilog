@@ -51,7 +51,7 @@ iframe{
 max-width:100%;
 }
 /*SNSボタンのカスタマイズ*/
-ul.clearfix {
+.sns ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%,1fr));
     grid-auto-rows: 71.5px;
@@ -150,11 +150,11 @@ border:2px solid #f03e51;
 background:#f03e51;
 color:#fff;
 }
-.clearfix:after {
+/*.clearfix:after {
 content: "";
 display: block;
 clear: both;
-}
+}*/
 .share-title{
 padding: .5em .75em;
 margin-bottom: 30px;
@@ -162,10 +162,10 @@ background:var(--primary-color);
 color:#ffffff;
 }
 @media only screen and (max-width: 780px) {
-.sns li{
+/*.sns li{
 width:47%;
-}
-ul.clearfix {
+}*/
+.sns ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, 47%);
     grid-auto-rows: 71.5px;
