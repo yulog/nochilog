@@ -509,9 +509,9 @@ transition:0.3s;*/
   display: grid;
 }
 #blog-pager a:hover{
-text-decoration:none;
+/*text-decoration:none;
 color:#ffffff;
-background:#008ec2;
+background:#008ec2;*/
 }
 #blog-pager .pages{border:none;}
 i.material-icons {
