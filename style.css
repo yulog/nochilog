@@ -491,17 +491,22 @@ display: none;
 }
 /*    ページナビゲーション
 ------------------------------------------------ */
+#blog-pager{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 #blog-pager a{
-font-size: 14px;
+/*font-size: 14px;
 padding:16px 8px;
 width:130px;
 box-sizing:border-box;
 color:#666666;
-background-color:#ffffff;
-border:1px solid #dedede;
-margin:3px 6px;
-display: inline-block;
-transition:0.3s;
+background-color:#ffffff;*/
+  border:1px solid #dedede;
+  margin:3px 6px;
+/*display: inline-block;
+transition:0.3s;*/
+  display: grid;
 }
 #blog-pager a:hover{
 text-decoration:none;
@@ -509,6 +514,9 @@ color:#ffffff;
 background:#008ec2;
 }
 #blog-pager .pages{border:none;}
+i.material-icons {
+    line-height: 36px;
+}
 /*   サイドバー
 -------------------------------------- */
 .sidebar {
