@@ -7,6 +7,10 @@ Designer: Toumasu
 URL:www.vaster2.com
 ----------------------------------------------- */
 
+:root {
+    --primary-color: rgb(63,81,181);
+}
+
 body{
 font-family:Helvetica,"游ゴシック","Yu Gothic",sans-serif;
 margin:0;
@@ -145,7 +149,7 @@ clear: both;
 .share-title{
 padding: .5em .75em;
 margin-bottom: 30px;
-background:#008ec2;
+background:var(--primary-color);
 color:#ffffff;
 }
 @media only screen and (max-width: 780px) {
@@ -184,14 +188,14 @@ margin-bottom:30px;
 .entry-content h2{
 padding: .5em .75em;
 margin-bottom: 30px;
-background:#008ec2;
+background:var(--primary-color);
 color:#ffffff;
 }
 .entry-content h3{
 font-size:20px;
 padding:15px 0 15px 10px;
-border-left: 8px solid #008ec2;
-color:#008ec2;
+border-left: 8px solid var(--primary-color);
+color:var(--primary-color);
 }
 .main-outer p{
 font-size:16px;
@@ -204,7 +208,7 @@ padding-bottom:24px;
 width:100%;
 background-color: #ffffff;
 padding-bottom: 30px;
-border-top:3px solid #008ec2;
+border-top:3px solid var(--primary-color);
 }
 #header-inner{
 /*width:1040px;*/
@@ -410,7 +414,7 @@ margin-top:0;
 }
 .post-tag{
 font-size:14px !important;
-background:#008ec2;
+background:var(--primary-color);
 padding:1px 4px !important;
 color:#ffffff;
 margin-top:0;
@@ -460,12 +464,12 @@ transition:0.3s;
 }
 #related-posts a:hover{
 color:#ffffff;
-background:#008ec2;
+background:var(--primary-color);
 }
 #related-posts h2{
 padding: .5em .75em;
 margin-bottom: 30px;
-background:#008ec2;
+background:var(--primary-color);
 color:#ffffff;
 }
 #related-posts .related_img {
@@ -537,7 +541,7 @@ box-sizing:border-box;
 padding:5px 0 5px 10px;
 font-size:20px;
 font-weight:700;
-border-left: 2px solid #008ec2;
+border-left: 2px solid var(--primary-color);
 color:#000000;
 margin-bottom: 20px;
 margin-top: 30px;
@@ -550,7 +554,7 @@ color:#666666;
 font-weight: 700;
 }
 .popular-post ul li a:hover{
-color:#008ec2;
+color:var(--primary-color);
 }
 .popular-post ul li{
 margin: 5px 0;
@@ -605,7 +609,7 @@ background-color:#ffffff
 }
 .list-label-widget-content ul li a:hover{
 color:#ffffff;
-background-color:#008ec2;
+background-color:var(--primary-color);
 text-decoration:none;
 }*/
 .list-label-widget-content ul{
@@ -648,7 +652,7 @@ box-sizing:border-box;
 color:#ffffff;
 padding:8px 10px;
 margin:10px auto;
-background:#008ec2;
+background:var(--primary-color);
 ;
 }
 }
