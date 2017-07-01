@@ -515,7 +515,13 @@ background:rgb(63,81,181);
 }
 #blog-pager .pages{border:none;}
 i.material-icons {
-    line-height: 36px;
+  line-height: 36px;
+}
+#blog-pager-older-link {
+  grid-column: 2/3;
+}
+#blog-pager-newer-link {
+  grid-column: 1/2;
 }
 /*   サイドバー
 -------------------------------------- */
