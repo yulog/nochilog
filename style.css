@@ -11,7 +11,7 @@ URL:www.vaster2.com
     --primary-color: rgb(63,81,181);
 }
 
-.content-wrapper, div.sns ul, div#searchbox, form, button.icon-search, #blog-pager, #blog-pager a {
+.content-wrapper, div.sns ul, div#searchbox, form, #blog-pager, #blog-pager a {
   display: grid;
 }
 
@@ -275,9 +275,10 @@ input#q:hover {
 input#q:focus {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-button.icon-search {
+button.material-icons {
   position: absolute;
-  height: 33px;
+  /*height: 33px;*/
+  line-height: 33px;
   margin-left: 164px;
   outline: transparent none 0;
   border: 0 none transparent;
