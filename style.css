@@ -603,7 +603,7 @@ margin: 5px;
 }
 /*   月別アーカイブ
 --------------------------------------- */
-.archive-list ul{
+/*.archive-list ul{
 padding:0 0 20px 10px;
 list-style-type:none;
 line-height:1.5em;
@@ -613,7 +613,7 @@ color:#2098a8;
 }
 .archive-list ul li{
 padding-bottom:7px;
-}
+}*/
 
 .BlogArchive h4 {
     margin-bottom: 0px;
