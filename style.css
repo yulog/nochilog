@@ -562,8 +562,8 @@ font-size:20px;
 font-weight:700;
 border-left: 2px solid var(--primary-color);
 color:#000000;
-margin-bottom: 20px;
-margin-top: 30px;
+/*margin-bottom: 20px;
+margin-top: 30px;*/
 }
 /*   人気記事
 --------------------------------------- */
@@ -613,6 +613,25 @@ color:#2098a8;
 }
 .archive-list ul li{
 padding-bottom:7px;
+}
+
+.BlogArchive h4 {
+    margin-bottom: 0px;
+}
+ul.calendar {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.archive li {
+    display: block;
+}
+[data-count]::after {
+    content: '('attr(data-count)')';
+    font-size: .5rem;
+    line-height: 0;
+    margin-left: .125rem;
+    position: relative;
+    vertical-align: baseline;
 }
 /*   ラベル
 -------------------------------------------- */
