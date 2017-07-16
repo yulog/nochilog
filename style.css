@@ -441,6 +441,9 @@ color:#ffffff;
 margin-top:0;
 display:inline-block;
 }
+.post-tag a.label {
+    color: #ffffff;
+}
 /*   記事一覧の要約   */
 .snippet{
 font-size:14px;
