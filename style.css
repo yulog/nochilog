@@ -521,7 +521,8 @@ display: none;
 ------------------------------------------------ */
 #blog-pager{
   /*display: grid;*/
-  grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding-right: 40px;
 }
 #blog-pager a{
 /*font-size: 14px;
@@ -550,6 +551,11 @@ background:var(--primary-color);
 }
 #blog-pager-newer-link {
   grid-column: 1/2;
+}
+@media screen and (max-width: 768px) {
+    #blog-pager{
+    padding-right: 0 !important;
+    }
 }
 /*   サイドバー
 -------------------------------------- */
