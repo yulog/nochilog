@@ -835,3 +835,8 @@ margin:0;
 bottom:0;
 }
 }
+h1.mdl-typography--display-4.error {
+    font-size: calc(112% + 30vw);
+    color: #4d90fe;
+    line-height: calc(100% + 3vw);
+}
