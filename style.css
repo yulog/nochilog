@@ -350,9 +350,11 @@ background:#ffffff;
 padding-left:20px;
 box-sizing:border-box;
 }
+.date-outer, #blog-pager {
+    padding-right: 40px;
+}
 .date-outer {
 border-right:1px solid #e4e4e4;
-padding-right:40px;
 }
 #main{
 margin:0;
