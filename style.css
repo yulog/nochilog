@@ -479,7 +479,9 @@ display: inline;
 list-style-type: none;
 }
 .breadcrumb  li:nth-child(n+2)::before {
-content: " > ";
+    content: "chevron_right";
+    font-family: "Material Icons";
+    vertical-align: bottom;
 }
 /*   関連記事
 -------------------------------------- */
