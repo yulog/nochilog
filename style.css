@@ -854,3 +854,8 @@ h1.mdl-typography--display-4.error {
     -ms-user-select: none;
     user-select: none;
 }
+/*   not item, static_page == index, archive
+--------------------------------------------------- */
+.index #blog-pager {
+    padding-right: initial;
+}
