@@ -641,7 +641,7 @@ padding-bottom:7px;
 }
 ul.calendar {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(6,1fr);
 }
 .archive li {
     display: block;
@@ -653,6 +653,23 @@ ul.calendar {
     margin-left: .125rem;
     position: relative;
     vertical-align: baseline;
+}
+.calendar li > span {
+    display: inline-block;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+.calendar li a {
+    display: inline-block;
+    background-color: #dedede;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
 }
 /*   ラベル
 -------------------------------------------- */
