@@ -478,7 +478,7 @@ text-decoration:none;
 display: inline;
 list-style-type: none;
 }
-.breadcrumb  li:after {
+.breadcrumb  li:nth-child(n+2)::before {
 content: " > ";
 }
 /*   関連記事
