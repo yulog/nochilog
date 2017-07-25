@@ -685,20 +685,23 @@ padding: 0 12px;
 }
 /*   フッター
 ----------------------------------------------- */
-.footer-outer{
-color:#999;
+.mdl-mini-footer{
+/*color:#999;
 width:100%;
-clear:both;
+clear:both;*/
 font-size:14px;
-padding-top:40px;
-padding-bottom:30px;
+/*padding-top:40px;
+padding-bottom:30px;*/
 }
-.footer-outer a{
+.mdl-logo a {
+    color: #ff9800;
+}
+/*.footer-outer a{
 color:#999;
 }
 .footer-outer a:hover{
 text-decoration:none;
-}
+}*/
 /*  メニューを開くボタン  */
 .button-toggle{
 display:none;
@@ -839,11 +842,11 @@ display:none;
 .archive-list ul li{
 padding-bottom:10px;
 }
-.footer-outer{
+/*.footer-outer{
 width:auto;
 margin:0;
 bottom:0;
-}
+}*/
 }
 /*   404 Not Found
 --------------------------------------------------- */
