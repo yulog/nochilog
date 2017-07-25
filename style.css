@@ -223,15 +223,17 @@ padding-bottom:24px;
 /*   ヘッダー
 --------------------------------------- */
 .Header{
-width:100%;
+/*width:100%;
 background-color: #ffffff;
 padding-bottom: 30px;
-border-top:3px solid var(--primary-color);
+border-top:3px solid var(--primary-color);*/
 }
 #header-inner{
-/*width:1040px;*/
-margin:0 auto;
-padding-top:20px;
+    /*width:1040px;*/
+    margin:0 auto;
+    padding-top:20px;
+    padding-bottom: 30px;
+    border-top: 3px solid var(--primary-color);
 }
 .Header p{
 margin:0;
