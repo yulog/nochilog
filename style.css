@@ -662,7 +662,7 @@ ul.calendar {
     line-height: 2em;
     text-align: center;
 }
-.calendar li a {
+.calendar li > a {
     display: inline-block;
     background-color: #dedede;
     border-radius: 50%;
@@ -670,6 +670,9 @@ ul.calendar {
     height: 2em;
     line-height: 2em;
     text-align: center;
+}
+a.mdl-badge.mdl-badge--overlap:active {
+    background-color: #d6d6d6;
 }
 /*   ラベル
 -------------------------------------------- */
