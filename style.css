@@ -563,7 +563,8 @@ background:var(--primary-color);
 @media screen and (max-width: 768px) {
     #blog-pager{
         padding-right: 0 !important;
-        margin: 0 7.5px;
+        width: calc(100% - 15px);
+        margin: 1em auto;
     }
 }
 /*   サイドバー
