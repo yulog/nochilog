@@ -868,6 +868,11 @@ margin:0;
 bottom:0;
 }*/
 }
+@media screen and (max-width: 857px){
+    ul.calendar {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
 /*   404 Not Found
 --------------------------------------------------- */
 h1.mdl-typography--display-4.error {
