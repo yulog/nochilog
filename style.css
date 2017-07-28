@@ -379,6 +379,7 @@ margin-bottom: 30px !important;
 }
 .post-body {
     padding: 10px 15px;
+    width: auto;
 }
 /* 記事ページの公開日 カテゴリ名 */
 p.kousin{
