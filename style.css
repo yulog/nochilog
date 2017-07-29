@@ -535,6 +535,7 @@ display: none;
   /*display: grid;*/
     grid-template-columns: 1fr 20px 1fr;
     padding-right: 40px;
+    margin: 1em auto;
 }
 #blog-pager a{
 /*font-size: 14px;
@@ -568,7 +569,7 @@ background:var(--primary-color);
     #blog-pager{
         padding-right: 0 !important;
         width: calc(100% - 15px);
-        margin: 1em auto;
+        /*margin: 1em auto;*/
     }
 }
 /*   サイドバー
@@ -626,7 +627,7 @@ margin: 0;
 .item-content {
 margin: 5px;
 }
-/*   月別アーカイブ
+/*   アーカイブ
 --------------------------------------- */
 /*.archive-list ul{
 padding:0 0 20px 10px;
@@ -640,6 +641,10 @@ color:#2098a8;
 padding-bottom:7px;
 }*/
 
+.BlogArchive ul {
+    padding: 0 0 0 1.25em;
+    margin: 0;
+}
 .BlogArchive h4 {
     margin-bottom: 0px;
 }
