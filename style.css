@@ -590,7 +590,6 @@ p.cancel {
 }
 .cancel>a::after {
     content: "キャンセル";
-    font-size: 14px;
     vertical-align: middle;
 }
 #comment-form>.header {
