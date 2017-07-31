@@ -629,6 +629,9 @@ margin: 0;
 .item-content {
 margin: 5px;
 }
+.post-content {
+    margin: 5px;
+}
 /*   アーカイブ
 --------------------------------------- */
 /*.archive-list ul{
