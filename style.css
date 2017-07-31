@@ -370,7 +370,8 @@ height:auto;
 .post-outer ul {
 list-style-type: disc;
 padding:20px;
-margin-bottom: 30px !important;
+/*margin-bottom: 30px !important;*/
+    margin-bottom: 30px;
 }
 .post-outer ol {
 list-style-type: decimal;
@@ -532,13 +533,16 @@ display: none;
 }
 /*   コメント
 ------------------------------------------------ */
+#comments ul {
+    margin: 0;
+}
 .comments {
     display: grid;
 }
-.comments header > .inline {
+#comments>.comments header > .inline {
     display: grid;
-    grid-template-columns: 30px max-content 1fr 30px;
-    margin: 10px !important;
+    grid-template-columns: max-content max-content 1fr max-content;
+    margin: 10px;
     padding: 0;
 }
 ul.comments, .comments ul {
