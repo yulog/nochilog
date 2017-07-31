@@ -125,11 +125,10 @@
 
   //blogger.generateShareButtonList();
 
-  var frameElement = document.getElementById('comment-frame');
-  if (frameElement) {
+  if (document.getElementById('comment-frame')) {
     var iframeSrc = blogger.generateIFrameSrc();
     if (iframeSrc) {
-      frameElement.src = iframeSrc;
+      document.getElementById('comment-frame').src = blogger.generateIFrameSrc()
     }
   }
 
@@ -144,5 +143,5 @@
 //    });
 //  });
 
-  //$('.js').removeClass('hidden');
+  $('.js').removeClass('hidden');
 })();
