@@ -412,13 +412,14 @@ background-color:#f9f9f9;
 }*/
 .article-list img{
 float:left;
-width:300px;
-height:185px;
+/*width:300px;
+height:185px;*/
 padding-right:20px;
 }
 /*  記事一覧のタイトル  */
 .article-list-title{
 overflow:hidden;
+    padding: 10px 10px 10px 0;
 }
 .article-list-title h2{
 color:#666;
@@ -831,12 +832,12 @@ padding-right:0 !important;
 .grobal-navi{
 width:auto;
 }
-.article-list {
+/*.article-list {
 padding:15px 5px 10px 10px !important;
-}
+}*/
 .article-thumbnail img{
-width:100px !important;
-height:70px !important;
+/*width:100px !important;
+height:70px !important;*/
 }
 .article-thumbnail{
 text-align:center;
