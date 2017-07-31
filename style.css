@@ -596,6 +596,12 @@ p.cancel {
 #comment-form-title {
     grid-column: 1/2;
 }
+#comments>#comment-form>.header>.cancel {
+    display: none;
+}
+.comments>li>.footer>#comment-form+ul.inline {
+    display: none;
+}
 /*    ページナビゲーション
 ------------------------------------------------ */
 #blog-pager{
