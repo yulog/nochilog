@@ -564,6 +564,7 @@ a.delete::before {
 }
 ul.replies {
     padding: 20px 0 0 20px;
+    margin: 0 !important;
 }
 a.reply::before {
     content: "\E15E返信";
@@ -571,9 +572,29 @@ a.reply::before {
 }
 p.cancel {
     padding: initial;
+    margin: 24px 10px 16px 10px;
+    grid-column: 3/4;
 }
 #comment-frame {
     height: 19rem;
+}
+.cancel>a::before {
+    content: "\E5C9";
+    font-family: Material Icons;
+    line-height: 1;
+    vertical-align: text-bottom;
+}
+#comment-form>.header {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+}
+.cancel a {
+    line-height: 42px;
+    vertical-align: baseline;
+    font-size: 14px;
+}
+#comment-form-title {
+    grid-column: 1/2;
 }
 /*    ページナビゲーション
 ------------------------------------------------ */
