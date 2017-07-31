@@ -530,6 +530,51 @@ filter:alpha(opacity=70);
 p.st-post-footer-buttons {
 display: none;
 }
+/*   コメント
+------------------------------------------------ */
+.comments {
+    display: grid;
+}
+.comments header > .inline {
+    display: grid;
+    grid-template-columns: 30px max-content 1fr 30px;
+    margin: 10px !important;
+    padding: 0;
+}
+ul.comments, .comments ul {
+    list-style-type: none;
+}
+ul.comments {
+    padding: 0;
+}
+.comments .body p {
+    padding: 0 10px 0 5%;
+    margin: 10px;
+}
+a.permalink::before {
+    content: "\E157";
+    font-family: Material Icons;
+}
+.inline>li {
+    margin: 0 .3em;
+}
+a.delete::before {
+    content: "\E872";
+    font-family: Material Icons;
+}
+ul.replies {
+    padding: 20px 0 0 20px;
+}
+a.reply::before {
+    content: "\E15E返信";
+    font-family: Material Icons;
+}
+p.cancel {
+    padding: initial;
+}
+#comment-frame {
+    height: 15rem;
+}
 /*    ページナビゲーション
 ------------------------------------------------ */
 #blog-pager{
