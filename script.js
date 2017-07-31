@@ -118,17 +118,18 @@
   $('.content > .body a:has(img)').addClass('img-anchor');
 */
 
-  if (hljs) {
+  /*if (hljs) {
     hljs.configure({languages: []});
     hljs.initHighlighting();
-  }
+  }*/
 
   //blogger.generateShareButtonList();
 
-  if (document.getElementById('comment-frame')) {
+  var frameElement = document.getElementById('comment-frame');
+  if (frameElement) {
     var iframeSrc = blogger.generateIFrameSrc();
     if (iframeSrc) {
-      document.getElementById('comment-frame').src = blogger.generateIFrameSrc()
+      frameElement.src = iframeSrc;
     }
   }
 
