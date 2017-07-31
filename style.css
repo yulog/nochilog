@@ -585,8 +585,13 @@ p.cancel {
 .cancel>a::before {
     content: "\E5C9";
     font-family: Material Icons;
-    line-height: 1;
-    vertical-align: text-bottom;
+    vertical-align: middle;
+    margin-right: .25rem;
+}
+.cancel>a::after {
+    content: "キャンセル";
+    font-size: 14px;
+    vertical-align: middle;
 }
 #comment-form>.header {
     display: grid;
