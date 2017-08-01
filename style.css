@@ -279,7 +279,7 @@ input#q:hover {
 input#q:focus {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-button.material-icons {
+button.fa-search {
   position: absolute;
   font-size: 24px;
   height: 33px;
