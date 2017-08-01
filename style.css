@@ -557,14 +557,14 @@ ul.comments {
 }
 a.permalink::before {
     content: "\E157";
-    font-family: Material Icons;
+    font-family: icomoon;
 }
 .inline>li {
     margin: 0 .3em;
 }
 a.delete::before {
     content: "\E872";
-    font-family: Material Icons;
+    font-family: icomoon;
 }
 ul.replies {
     padding: 20px 0 0 20px;
@@ -572,7 +572,7 @@ ul.replies {
 }
 a.reply::before {
     content: "\E15E返信";
-    font-family: Material Icons;
+    font-family: icomoon;
 }
 p.cancel {
     padding: initial;
@@ -584,7 +584,7 @@ p.cancel {
 }
 .cancel>a::before {
     content: "\E5C9";
-    font-family: Material Icons;
+    font-family: icomoon;
     vertical-align: middle;
     margin-right: .25rem;
 }
