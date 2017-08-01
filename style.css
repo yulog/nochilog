@@ -281,7 +281,8 @@ input#q:focus {
 }
 button.material-icons {
   position: absolute;
-  /*height: 33px;*/
+  font-size: 24px;
+  height: 33px;
   line-height: 33px;
   margin-left: 164px;
   outline: transparent none 0;
