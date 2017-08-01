@@ -20,6 +20,10 @@ font-family:Helvetica,"游ゴシック","Yu Gothic",sans-serif;
 margin:0;
 font-size:16px;
 line-height:1.6em;
+    /* bundle_v2.css */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 img, video, object {
 max-width: 100%;
@@ -40,6 +44,8 @@ margin:initial;
 }
 .widget{
 margin:initial;
+    /* bundle_v2.css */
+    line-height: 1.4;
 }
 /*  記事部分とサイドバー  */
 .content-wrapper{
@@ -63,6 +69,8 @@ div.sns ul {
     grid-row-gap: 20px;
     justify-content: center;
     padding: 0 1.25em;
+    line-height: 1.2;
+    margin: 0 0 30px 0;
 }
 .sns{
 margin:10px auto;
@@ -536,6 +544,10 @@ display: none;
 ------------------------------------------------ */
 #comments ul {
     margin: 0;
+    line-height: 1.2;
+}
+#comments li {
+    padding: .25em 0;
 }
 .comments {
     display: grid;
@@ -568,7 +580,7 @@ a.delete::before {
     font-family: icomoon;
 }
 ul.replies {
-    padding: 20px 0 0 20px;
+    padding: 15px 0 0 20px;
     margin: 0 !important;
 }
 a.reply::before {
