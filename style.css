@@ -420,7 +420,7 @@ padding-right:20px;
 /*  記事一覧のタイトル  */
 .article-list-title{
 overflow:hidden;
-    padding: 10px 10px 10px 0;
+    padding: 10px;
 }
 .article-list-title h2{
 color:#666;
