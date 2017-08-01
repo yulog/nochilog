@@ -638,8 +638,9 @@ color:#ffffff;
 background:var(--primary-color);
 }
 #blog-pager .pages{border:none;}
-.blog-pager i.material-icons {
+.blog-pager i.fa-chevron_right {
   line-height: 36px;
+  font-size: 24px;
 }
 #blog-pager-older-link {
   grid-column: 3/4;
