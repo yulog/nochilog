@@ -372,8 +372,9 @@ margin:0;
 width: 100%;
 }
 .post-outer img{
-max-width:100%;  /* 記事内の画像をはみ出させない */
-height:auto;
+    max-width:100%;  /* 記事内の画像をはみ出させない */
+    height:auto;
+    display: initial;
 }
 /*  記事ページのリストタグのデザイン  */
 .post-outer ul {
@@ -1036,4 +1037,5 @@ h1.mdl-typography--display-4.error {
 --------------------------------------------------- */
 .lum-lightbox.lum-open {
     z-index: 1;
+    display: initial;
 }
