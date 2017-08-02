@@ -392,15 +392,15 @@ margin-bottom: 30px !important;
     width: auto;
 }
 /* 記事ページの公開日 カテゴリ名 */
-p.kousin{
+p.meta{
 font-size: 14px;
 display: inline-block;
-color: #696969;
+/*color: #696969;*/
 padding-bottom:3px !important;
 }
-p.kousin a {
+/*p.kousin a {
 color: #696969;
-}
+}*/
 /*   トップページ、カテゴリ、アーカイブの記事一覧
 --------------------------------------------------------- */
 .article-list-link{
