@@ -1037,5 +1037,7 @@ h1.mdl-typography--display-4.error {
 --------------------------------------------------- */
 .lum-lightbox.lum-open {
     z-index: 1;
+}
+.lum-lightbox-inner img {
     display: initial;
 }
