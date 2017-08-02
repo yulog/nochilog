@@ -1032,3 +1032,8 @@ h1.mdl-typography--display-4.error {
 .index #blog-pager {
     padding-right: initial;
 }
+/*   Luminous
+--------------------------------------------------- */
+.lum-lightbox.lum-open {
+    z-index: 1;
+}
