@@ -201,8 +201,12 @@ color:#3366cc;
 blockquote {
 padding: 10px 30px;
 margin: 10px 0 20px 0;
-border: 1px solid #c8c8c8;
+/*border: 1px solid #c8c8c8;*/
 overflow-wrap: break-word;
+    background: rgba(63,81,181,.26);
+}
+blockquote::before {
+    left: .5em;
 }
 /*   記事のフォント
 ----------------------------------------------- */
