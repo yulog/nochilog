@@ -1045,3 +1045,23 @@ h1.mdl-typography--display-4.error {
 .lum-lightbox-inner img {
     display: initial;
 }
+
+/*   pre
+--------------------------------------------------- */
+pre::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	background:#eee;
+}
+
+pre::-webkit-scrollbar-track {
+	background:#eee;
+}
+
+pre::-webkit-scrollbar-thumb {
+	background:#999;
+}
+
+pre::-webkit-scrollbar-thumb:hover{
+	background:#666;
+}
