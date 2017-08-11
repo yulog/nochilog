@@ -545,6 +545,29 @@ filter:alpha(opacity=70);
 p.st-post-footer-buttons {
 display: none;
 }
+
+/*   Related Posts
+------------------------------------------------ */
+.related-posts-container>ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    grid-column-gap: 6px;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 780px) {
+.related-posts-container>ul {
+    grid-template-columns: repeat(auto-fit,minmax(49%,1fr));
+}
+}
+
+li.related-post-item {
+    padding: 3px 0;
+}
+
+li.related-post-item:hover {
+    background-color: rgba(255, 121, 176, 0.14);
+}
 /*   コメント
 ------------------------------------------------ */
 #comments ul {
