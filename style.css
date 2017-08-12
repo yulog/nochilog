@@ -553,6 +553,7 @@ display: none;
     grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
     grid-column-gap: 6px;
     list-style-type: none;
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 780px) {
