@@ -384,13 +384,16 @@ width: 100%;
 .post-outer ul {
 list-style-type: disc;
 padding:20px;
-/*margin-bottom: 30px !important;*/
-    margin-bottom: 30px;
+/*margin-bottom: 30px !important;
+    margin-bottom: 30px;*/
 }
 .post-outer ol {
 list-style-type: decimal;
 padding:20px;
-margin-bottom: 30px !important;
+/*margin-bottom: 30px !important;*/
+}
+.main-outer li {
+    font-size: 16px;
 }
 .post-body {
     padding: 10px 15px;
