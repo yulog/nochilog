@@ -490,6 +490,19 @@ word-break:break-all;
 display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 4;
+    height: calc(1.5em*2);
+    overflow: hidden;
+}
+.snippet::after {
+    background: linear-gradient(to left,#fff 0%,#fff 20%,rgba(255,255,255,0) 100%);
+    color: #888;
+    height: 1.5em;
+    width: 96px;
+    content: '\2026';
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: right;
 }
 /*   パンくずリスト
 --------------------------------------- */
