@@ -170,8 +170,8 @@ clear: both;
 .share-title{
 padding: .5em .75em;
 margin-bottom: 30px;
-background:var(--primary-color);
-color:#ffffff;
+/*background:var(--primary-color);
+color:#ffffff;*/
 }
 @media only screen and (max-width: 780px) {
 /*.sns li{
@@ -531,8 +531,8 @@ background:var(--primary-color);
 #related-posts h2{
 padding: .5em .75em;
 margin-bottom: 30px;
-background:var(--primary-color);
-color:#ffffff;
+/*background:var(--primary-color);
+color:#ffffff;*/
 }
 #related-posts .related_img {
 margin:5px;
