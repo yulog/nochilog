@@ -490,7 +490,7 @@ word-break:break-all;
 display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 4;
-    height: calc(1.5em*2);
+    height: calc(1.4em*2);
     overflow: hidden;
 }
 .snippet::after {
