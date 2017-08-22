@@ -258,13 +258,15 @@ border-top:3px solid var(--primary-color);*/
 margin:0;
 }
 .PageList{
-width:100%;
-background-color:#4b99b5;
+/*width:100%;
+background-color:#4b99b5;*/
 }
 /*.grobal-navi{
   width:1040px;
   margin:0 auto;
 }*/
+/*   ヘッダー > 検索ボックス
+--------------------------------------- */
 div#searchbox {
   /*display: grid;*/
   grid-template-columns: 200px;
