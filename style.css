@@ -823,17 +823,18 @@ margin: 5px;
     bottom: 0;
 }
 
-.snippet-fade:hover {
-    color: #888;
-    background: #fff;
-    box-shadow: -5px -2px 10px 0px #fff;
-}
-
 .snippet-fade::after {
     content: '\2026';
     color: #888;
     float: right;
 }
+
+a.snippet-fade:hover {
+    color: #888;
+    background: #fff;
+    box-shadow: -6px -2px 10px 2px #fff;
+}
+
 /*   アーカイブ
 --------------------------------------- */
 /*.archive-list ul{
@@ -849,7 +850,7 @@ padding-bottom:7px;
 }*/
 
 .BlogArchive ul {
-    padding: 0 0 0 1.25em;
+    padding: 0 0 0 1em;
     margin: 0;
 }
 .BlogArchive h4 {
@@ -857,7 +858,7 @@ padding-bottom:7px;
 }
 ul.calendar {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(4,1fr);
 }
 .archive li {
     display: block;
@@ -870,15 +871,15 @@ ul.calendar {
     position: relative;
     vertical-align: baseline;
 }*/
-.calendar li > span {
+.calendar li > a, .calendar li > span {
     display: inline-block;
     border-radius: 50%;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
     text-align: center;
 }
-.calendar li > a {
+/*.calendar li > a {
     display: inline-block;
     background-color: #dedede;
     border-radius: 50%;
@@ -886,7 +887,7 @@ ul.calendar {
     height: 2em;
     line-height: 2em;
     text-align: center;
-}
+}*/
 a.mdl-badge.mdl-badge--overlap:active {
     background-color: #d6d6d6;
 }
