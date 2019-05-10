@@ -871,7 +871,7 @@ ul.calendar {
     position: relative;
     vertical-align: baseline;
 }*/
-.calendar li > a, .calendar li > span {
+.calendar li > span {
     display: inline-block;
     border-radius: 50%;
     width: 3em;
@@ -879,15 +879,15 @@ ul.calendar {
     line-height: 3em;
     text-align: center;
 }
-/*.calendar li > a {
+.calendar li > a {
     display: inline-block;
     background-color: #dedede;
     border-radius: 50%;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
     text-align: center;
-}*/
+}
 a.mdl-badge.mdl-badge--overlap:active {
     background-color: #d6d6d6;
 }
