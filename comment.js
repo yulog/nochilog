@@ -45,7 +45,8 @@
     if (blogger.blog && blogger.post) {
       return (
         blogger.blog.bloggerUrl + '/comment-iframe.g?blogID=' + blogger.blog.blogId + '&postID=' + blogger.post.id +
-        (parentId ? '&parentID=' + parentId : '')/* +
+        (parentId ? '&parentID=' + parentId : '') +
+        '&skin=essential'/* +
         '#' + (encodeURIComponent(JSON.stringify(param)))*/
       );
     }
