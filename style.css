@@ -657,7 +657,7 @@ p.cancel {
     grid-column: 3/4;
 }
 #comment-frame {
-    height: 19rem;
+    height: 22rem;
 }
 .cancel>a::before {
     content: "\E5C9";
@@ -1138,4 +1138,11 @@ pre>code::-webkit-scrollbar-thumb {
 
 pre>code::-webkit-scrollbar-thumb:hover{
 	background:rgba(0,0,0,.2);
+}
+/*   code
+--------------------------------------------------- */
+code {
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 2px 4px;
 }
