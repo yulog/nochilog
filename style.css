@@ -162,6 +162,36 @@ border:2px solid #f03e51;
 background:#f03e51;
 color:#fff;
 }
+/* Blogger */
+.blogger a {
+background:#fff;
+color:#ff9800;
+border:2px solid #ff9800;
+}
+.blogger a:hover {
+background:#ff9800;
+color:#fff;
+}
+/* Pinterest */
+.pinterest a {
+background:#fff;
+color:#bd081c;
+border:2px solid #bd081c;
+}
+.pinterest a:hover {
+background:#bd081c;
+color:#fff;
+}
+/* Tumblr */
+.tumblr a {
+background:#fff;
+color:#36465d;
+border:2px solid #36465d;
+}
+.tumblr a:hover {
+background:#36465d;
+color:#fff;
+}
 /*.clearfix:after {
 content: "";
 display: block;
