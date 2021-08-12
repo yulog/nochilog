@@ -1,0 +1,26 @@
+<b:if cond='data:view.isPost'>
+<div class='related-posts-container' id='related-posts-widget'/>
+<div style='clear: both;'/>
+<script type='text/javascript'>
+var labelArray = <b:eval expr='data:post.labels map (label =&gt; label.name)'/>;
+var relatedSettings = {
+blogURL:&quot;<data:blog.homepageUrl/>&quot;,
+relatedHeading:&quot;&lt;h4&gt;&lt;span&gt;関連する投稿&lt;/span&gt;&lt;/h4&gt;&quot;,
+relatedPosts:4,
+relatedStyle:3,
+thumbnailSize:&quot;w300-h200-p-k-no-nu&quot;,
+thumbnailSize2x:&quot;w600-h400-p-k-no-nu&quot;,
+defaultThumb:&quot;https://yulog.github.io/nochilog/image/no_thumb.svg&quot;,
+roundThumbs:false,
+titleLength:&quot;auto&quot;,
+snippetLength:45,
+centerText:false,
+openNewTab:false,
+currentURL:&quot;<data:post.url.canonical.https/>&quot;
+};</script>
+<script type='text/javascript'>
+//<![CDATA[
+var randomRelatedIndex,startRelated;!function(e,t,a){var l={callBack:function(){}};for(var r in relatedSettings)l[r]="undefined"==relatedSettings[r]?l[r]:relatedSettings[r];var s=function(e){var l=t.createElement("script");l.type="text/javascript",l.src=e,a.appendChild(l)},i=function(e,t){return Math.floor(Math.random()*(t-e+1))+e},d=function(e){var t,a,l=e.length;if(0===l)return!1;for(;--l;)t=Math.floor(Math.random()*(l+1)),a=e[l],e[l]=e[t],e[t]=a;return e},n="object"==typeof labelArray&&labelArray.length>0?"/-/"+d(labelArray)[0]:"";randomRelatedIndex=function(e){var t=e.feed.openSearch$totalResults.$t-l.relatedPosts,a=i(1,t>0?t:1);s(l.blogURL.replace(/\/$/,"")+"/feeds/posts/summary"+n+"?alt=json-in-script&orderby=updated&start-index="+a+"&max-results="+l.relatedPosts+"&callback=startRelated")},startRelated=function(e){var t,a,r,s,i,n,c=document.getElementById("related-posts-widget"),u=d(e.feed.entry),m=l.relatedStyle,p=l.relatedHeading+'<ul class="related-posts-'+m+'">',o=l.openNewTab?' target="_blank"':"",h=l.centerText?"text-align:center;":"",b=l.roundThumbs?"-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;":"",g=l.currentURL;if(c){for(var v=0;v<l.relatedPosts&&v!=u.length;v++){r=u[v].title.$t,s="auto"!==l.titleLength&&l.titleLength<r.length?r.substring(0,l.titleLength)+"&hellip;":r,i="media$thumbnail"in u[v]&&!1!==l.thumbnailSize?u[v].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/,"/"+l.thumbnailSize):l.defaultThumb,prw="media$thumbnail"in u[v]&&!1!==l.thumbnailSize?'<source srcset="'+u[v].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/,"/"+l.thumbnailSize+"-rw")+", "+u[v].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/,"/"+l.thumbnailSize2x+"-rw")+' 2x">':"",p2x="media$thumbnail"in u[v]&&!1!==l.thumbnailSize2x?' srcset="'+u[v].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/,"/"+l.thumbnailSize2x)+' 2x"':"";for(var f=[1,2,3,4,5,6,7,8,9,10,11,12],y=["January","February","March","April","May","June","July","August","September","October","November","December"],x=(t=d(u[v].published.$t)).split("-")[2].substring(0,2),$=t.split("-")[1],w=t.split("-")[0],S=0;S<f.length;S++)if(parseInt($)==f[S]){$=y[S];break}postdate=$+" "+x+" "+w,n="summary"in u[v]&&l.snippetLength>0?u[v].summary.$t.replace(/<br ?\/?>/g," ").replace(/<.*?>/g,"").replace(/[<>]/g,"").substring(0,l.snippetLength)+"&hellip;":"";for(var k=0,R=u[v].link.length;k<R;k++)a="alternate"==u[v].link[k].rel?u[v].link[k].href:"#";var L=new URL(a);g!=(a="https://"+L.host+L.pathname)?1==m?p+='<li><a href="'+a+'" '+o+">"+s+"</a></li>":2==m?p+='<li><a href="'+a+'" '+o+'><div class="related-title">'+s+'</div></a><div class="related-snippets">'+n+"</div></li>":3==m?p+='<li class="related-post-item" style="'+h+'"><a href="'+a+'" '+o+"><picture>"+prw+'<img alt="" class="related-thumb-large" src="'+i+'"'+p2x+' style="'+b+'"></picture><div class="related-title">'+s+'</div><div class="related-snippets">'+n+"</div></a></li>":4==m?p+='<li class="related-post-item" style="'+h+'"><a href="'+a+'" '+o+'><img alt="" class="related-thumb-large" src="'+i+'" style="'+b+'"><div class="related-title">'+s+'</div></a><div class="related-date">'+postdate+"</div></li>":5==m?p+='<li class="related-post-item" style="'+h+'"><a href="'+a+'" '+o+'><img alt="" class="related-thumb-large" src="'+i+'" style="'+b+'"><div class="related-title">'+s+"</div></a></li>":6==m?p+='<li class="related-post-item"><a href="'+a+'" '+o+'><img alt="" class="related-thumb-large" src="'+i+'" style="'+b+'"><div class="related-wrapper" style="'+b+'"><div class="related-wrapper-inner"><div class="related-title">'+s+"</div></div></div></a></li>":7==m?p+='<li class="related-post-item"><a href="'+a+'" '+o+'><img alt="" class="related-thumb-large" src="'+i+'" style="'+b+'"></a></li>':8==m?p+='<li class="related-post-item"><a class="related-post-item-wrapper" href="'+a+'" '+o+'><img alt="" class="related-thumb" src="'+i+'" style="'+b+'"><div class="related-title">'+s+'</div></a><div class="related-date">'+postdate+"</div></li>":9==m&&(p+='<li><a href="'+a+'" '+o+'><img alt="" class="related-thumb" src="'+i+'" style="'+b+'"><div class="related-title">'+s+'</div></a><div class="related-snippets">'+n+"</div></li>"):1==u.length&&(p+="<li>関連記事はありません</li>")}c.innerHTML=p+='</ul><span style="display:block;clear:both;"></span>',l.callBack()}},s(l.blogURL.replace(/\/$/,"")+"/feeds/posts/summary"+n+"?alt=json-in-script&orderby=updated&max-results=0&callback=randomRelatedIndex")}(window,document,document.getElementsByTagName("head")[0]);
+//]]>
+</script>
+</b:if>
