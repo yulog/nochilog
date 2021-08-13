@@ -1,5 +1,5 @@
 let randomRelatedIndex, startRelated;
-!  ((_, b, c) => {
+!((_, b, c) => {
     let d = {
         callBack: () => { }
     };
@@ -8,13 +8,20 @@ let randomRelatedIndex, startRelated;
         let d = b.createElement("script");
         d.type = "text/javascript", d.src = a, c.appendChild(d)
     },
-        g = (a, b) => {
-            return Math.floor(Math.random() * (b - a + 1)) + a
+        g = (min, max) => {
+            return Math.floor(Math.random() * (max - min + 1)) + min
         },
-        h = (a) => {
-            let c, d, b = a.length;
+        h = ([...a]) => {
+            let b = a.length;
             if (0 === b) return !1;
-            for (; --b;) c = Math.floor(Math.random() * (b + 1)), d = a[b], a[b] = a[c], a[c] = d;
+            for (let i = b - 1; i >= 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            // a.slice().reverse().forEach((_, i) => {
+            //     const j = Math.floor(Math.random() * (i + 1));
+            //     [a[i], a[j]] = [a[j], a[i]];
+            // });
             return a
         },
         i = "object" == typeof labelArray && labelArray.length > 0 ? `/-/${h(labelArray)[0]}` : "",
@@ -24,7 +31,7 @@ let randomRelatedIndex, startRelated;
             f(`${d.blogURL.replace(/\/$/, "")}/feeds/posts/summary${i}?alt=json-in-script&orderby=updated&start-index=${c}&max-results=${d.relatedPosts}&callback=startRelated`)
         },
         k = (a) => {
-            let l, m, n, o, p, q, prw, p2x, b = document.getElementById("related-posts-widget"),
+            let m, n, o, p, q, prw, p2x, b = document.getElementById("related-posts-widget"),
                 c = h(a.feed.entry),
                 e = d.relatedStyle,
                 src = `${d.relatedHeading}<ul class="related-posts-${e}">`,
@@ -39,15 +46,10 @@ let randomRelatedIndex, startRelated;
                         o = "auto" !== d.titleLength && d.titleLength < n.length ? `${n.substring(0, d.titleLength)}&hellip;` : n,
                         p = "media$thumbnail" in c[r] && d.thumbnailSize !== !1 ? c[r].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/, `/${d.thumbnailSize}`) : d.defaultThumb,
                         prw = "media$thumbnail" in c[r] && d.thumbnailSize !== !1 ? `<source srcset="${c[r].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/, `/${d.thumbnailSize}-rw`)}, ${c[r].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/, `/${d.thumbnailSize2x}-rw`)} 2x">` : '',
-                        p2x = "media$thumbnail" in c[r] && d.thumbnailSize2x !== !1 ? ` srcset="${c[r].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/, `/${d.thumbnailSize2x}`)} 2x"` : '',
-                        l = h(c[r].published.$t);
-                    let day = new Date(l),
-                        v = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(day),
-                        u = day.getDate(),
-                        w = day.getFullYear(),
-                        postdate;
-                    postdate = `${v} ${u} ${w}`, q = "summary" in c[r] && d.snippetLength > 0 ? `${c[r].summary.$t.replace(/<br ?\/?>/g, " ").replace(/<.*?>/g, "").replace(/[<>]/g, "").substring(0, d.snippetLength)}&hellip;` : "";
-                    for (let y = 0, z = c[r].link.length; y < z; y++) m = "alternate" == c[r].link[y].rel ? c[r].link[y].href : "#";
+                        p2x = "media$thumbnail" in c[r] && d.thumbnailSize2x !== !1 ? ` srcset="${c[r].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/, `/${d.thumbnailSize2x}`)} 2x"` : '';
+                    let postdate = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(new Date(c[r].published.$t));
+                    q = "summary" in c[r] && d.snippetLength > 0 ? `${c[r].summary.$t.replace(/<br ?\/?>/g, " ").replace(/<.*?>/g, "").replace(/[<>]/g, "").substring(0, d.snippetLength)}&hellip;` : "";
+                    m = c[r].link.some(l => l.rel == "alternate") ? c[r].link.find(l => l.rel == "alternate").href : "#";
                     let parser = new URL(m);
                     m = `https://${parser.host}${parser.pathname}`;
                     if (cURL != m) {
